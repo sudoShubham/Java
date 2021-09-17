@@ -23,6 +23,10 @@ public class MyChar {
 		return false;
 	}
 
+//	boolean isConsonant() {
+//		return (!isAlphabet());
+//	}
+
 	void printLower() {
 		int res = ch + 32;
 
