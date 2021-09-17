@@ -1,0 +1,17 @@
+package OOPS;
+
+public class MotorBikeRunner {
+
+	public static void main(String[] args) {
+		MotorBike hero = new MotorBike();
+		MotorBike honda = new MotorBike();
+
+		hero.start();
+		honda.start();
+
+		hero.speed = 10;
+		honda.speed = 20;
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package OOPS;
+
+public class MotorBike {
+	private int speed;
+
+	void start() {
+		System.out.println("Bike has started");
+	}
+
+}

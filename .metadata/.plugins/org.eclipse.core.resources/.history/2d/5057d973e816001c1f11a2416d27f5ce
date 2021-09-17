@@ -1,0 +1,10 @@
+package OOPS;
+
+public class BiNumbersRunner {
+
+	public static void main(String[] args) {
+		BiNumbers number = new BiNumbers(2, 5);
+
+	}
+
+}

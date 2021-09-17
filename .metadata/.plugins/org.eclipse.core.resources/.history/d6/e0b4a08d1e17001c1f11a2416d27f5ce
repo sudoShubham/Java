@@ -1,0 +1,34 @@
+package OOPS;
+
+public class MyChar {
+	char ch;
+
+	MyChar(char ch) {
+		this.ch = ch;
+	}
+
+	int isNumber() {
+		int decimal = ch;
+		if (decimal >= 48 && decimal <= 57) {
+			return 1;
+		} else
+			return 0;
+	}
+
+	int isAlphabet() {
+		int decimal = ch;
+		if ((decimal >= 65 && decimal <= 90) || (decimal >= 97 && decimal <= 122)) {
+			return 1;
+		}
+		return 0;
+	}
+
+	void printLower() {
+		System.out.println(ch + 32);
+	}
+
+	void printUpper() {
+		System.out.println(ch - 32);
+	}
+
+}

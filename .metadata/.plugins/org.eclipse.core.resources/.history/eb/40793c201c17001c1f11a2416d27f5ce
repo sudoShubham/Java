@@ -1,0 +1,18 @@
+package OOPS;
+
+public class MyChar {
+	char ch;
+
+	MyChar(char ch) {
+		this.ch = ch;
+	}
+	
+	int isNumber() {
+		int decimal = ch;
+		if(decimal>=48 && decimal<=57) {
+			return 1;
+		}
+		else return 0;
+	}
+
+}
