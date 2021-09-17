@@ -15,16 +15,34 @@ public class MenuRunner {
 
 		System.out.println("Enter your choice.\n1.Add\n2.Subtract.\n3.Multiply.\n4.Divide.");
 		int choice = scanner.nextInt();
-		if (choice == 1)
+//		if (choice == 1)
+//			System.out.println(operation.add());
+//		else if (choice == 2)
+//			System.out.println(operation.sub());
+//		else if (choice == 3)
+//			System.out.println(operation.mul());
+//		else if (choice == 4)
+//			System.out.println(operation.div());
+//		else
+//			System.out.println("Please enter correct choice.");
+		switch (choice) {
+		case 1:
 			System.out.println(operation.add());
-		else if (choice == 2)
+			break;
+		case 2:
 			System.out.println(operation.sub());
-		else if (choice == 3)
+			break;
+		case 3:
 			System.out.println(operation.mul());
-		else if (choice == 4)
+			break;
+		case 4:
 			System.out.println(operation.div());
-		else
+			break;
+		default:
 			System.out.println("Please enter correct choice.");
+
+		}
+
 	}
 
 }
