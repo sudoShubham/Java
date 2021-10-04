@@ -1,9 +1,0 @@
-package OOPS;
-
-public class MyChar {
-char ch;
-MyChar(char ch){
-	this.ch = ch;
-}
-
-}

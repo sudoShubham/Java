@@ -1,20 +1,23 @@
 package students.array;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Student {
 	String name;
-	int marks[];
+	ArrayList<Integer> marks = new ArrayList<Integer>();
 
-	Student(String name, int marks[]) {
+	Student(String name, int... marks) {
 		this.name = name;
-		this.marks = marks;
+		for (int mark : marks) {
+			this.marks.add(mark);
+		}
 
 	}
 
 	int numberOfMarks() {
-		return marks.length;
+		return marks.size();
 	}
 
 	int sumOfMarks() {
@@ -26,13 +29,12 @@ public class Student {
 	}
 
 	int maxMarks() {
-		Arrays.sort(marks);
-		return (marks[marks.length - 1]);
+
+		return Collections.max(marks);
 	}
 
 	int minMarks() {
-		Arrays.sort(marks);
-		return (marks[0]);
+		return Collections.min(marks);
 	}
 
 	BigDecimal avgMarks() {

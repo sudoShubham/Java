@@ -1,9 +1,0 @@
-package OOPS;
-
-public class MotorBike {
-	void start() {
-		int speed;
-		System.out.println("Bike has started");
-	}
-
-}
